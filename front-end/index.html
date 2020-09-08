@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.PNG">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+    <title>Calculator</title>
+    <style>
+        body{
+            /* background-position-x: center;
+            background-position-y: top; */
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+            background-size: cover;
+        }
+        .container{
+            height: 75vh;
+            width: 50vh;
+            background-color:#784c5a;
+            border-style: solid;
+            border-radius: 2vh;
+            border-width: 5px;
+            margin-top:80px;
+        }
+        .container .cal-display{
+           width: 100%;
+           height: 20%;
+           background-color: #0a0801;
+           border-radius: 10px;
+           margin-top:4px;
+        }
+        .text-box{
+            width: 80%;
+            height:5vh;
+            margin: 5vh;
+            font-size: 20px;
+            color: red;
+        }
+        .container .cal-buttons{
+            width: 100%;
+            height: 72%;
+            border-style: solid;
+           border-radius: 10px;
+           margin-bottom: 3px;
+           background-color:#a19c8f;
+        
+        }
+        button{
+            margin:2vh;
+            width:6vh;
+            font-size: 10vh;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="cal-display">
+        <center>
+           <input type="text" class="text-box" value="">
+        </center>
+        </div>
+        <br>
+        <div class="cal-buttons">
+           <table>
+               <tr>
+                   <td><button class="operator btn btn-info" value="+" id="Add">+</button></td>
+                   <td><button class="operator btn btn-info" value="-" id="Sub">-</button></td>
+                   <td><button class="operator btn btn-info" value="*" id="Mul">x</button></td>
+                   <td><button class="operator btn btn-info" value="/" id="Div">/</button></td>
+                </tr>
+
+               <tr>
+                <td><button class="btn btn-light waves-effect" value="7" id="seven">7</button></td>
+                <td><button class="btn btn-light waves-effect" value="8" id="Eight">8</button></td>
+                <td><button class="btn btn-light waves-effect" value="9" id="Nine">9</button></td>
+                <td><button class="operator btn btn-info" value="." id="dot">.</button></td>
+                </tr>
+
+               <tr>
+                <td><button class="btn btn-light waves-effect" value="4" id="Four">4</button></td>
+                <td><button class="btn btn-light waves-effect" value="5" id="Five">5</button></td>
+                <td><button class="btn btn-light waves-effect" value="6" id="Six">6</button></td>
+                <td><button class="operator btn btn-info" id="Ac" value="">AC</button></td>    
+               </tr>
+
+                <tr>
+                    <td><button class="btn btn-light waves-effect" value="1" id="one">1</button></td>
+                    <td><button class="btn btn-light waves-effect" value="2" id="two">2</button></td>
+                    <td><button class="btn btn-light waves-effect" value="3" id="Three">3</button></td>
+                    <td><button class="operator btn btn-info" value="=" id="Equal">=</button></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td><button class="btn btn-light waves-effect" value="0" id="zero">0</button></td>
+                    <td><button class="operator btn btn-info" value="" id="back"><-</button></td>
+                     
+                     
+                 </tr>
+           </table>
+        </div>
+    </div>
+    </center>
+
+
+</body>
+<script src="../back-end/index.js"></script>
+</html>
