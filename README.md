@@ -1,1 +1,3 @@
-# Rajath2000.github.io
+# Simple Calculator
+
+Perform simple calculations
